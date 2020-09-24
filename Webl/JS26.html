@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //逻辑中断/短路:
+        //逻辑与：
+        console.log(123 && 456);    //如果表达式1为真，则返回表达式2-->456
+        console.log(0 && 456);      //如果表达式1为假，则返回表达式1-->0
+        console.log(0 && 1+2 && 56*789);     //-->0
+
+        //如果有空的或者否定的为假，则其余是真的
+        //假：0,'',null,undefined,NaN
+        
+        //逻辑或：
+        console.log(123 || 456);    //如果表达式1为真，则返回表达式1-->123
+        console.log(123 || 456 || 789);     //-->123
+        console.log( 0 || 456 || 789);    //如果表达式1结果为假，则返回表达式2
+        
+        //逻辑中断会影响程序的运行结果
+        var num = 0;
+        console.log(123 || num++);
+        console.log(num);   //0
+        
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
