@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for(var i = 1; i<=100; i++){
+            console.log('滴滴');
+            //可以重复执行某些代码
+        }
+        //用户控制输出的次数
+        var num = prompt('请您输入次数:');
+        for(var i = 1;i<=num;i++){
+            console.log('滴滴滴');  
+            
+        }
+        //for循环重复执行不同的代码：
+        for (var i = 1; i<=100; i++){
+            console.log('这个人今年'+ i + '岁了');
+            if(i <= 3){
+                console.log('他还是个baby');
+                
+            }
+            else if(i>3 && i<=12){
+                console.log('他还在读小学');
+                
+            }
+            else if(i>12 && i<=15){
+                console.log('他还在读初中');
+                
+            }
+            else if(i>15 && i<=18){
+                console.log('他快高考啦');
+                
+            }
+            else if(i>18 && i<=22){
+                console.log('他大学啦');
+                
+            }
+            else if(i>22){
+                console.log('...');
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
