@@ -19,24 +19,24 @@
             width:100px;
             height:100px;
             position:absolute;
-            left:300px;
-            top:200px;
+            left:100px;
+            top:400px;
 
         }
     </style>
 </head>
 <body>
-    <div id="box1" class = "box1class">
+    <div id="box1" class = "box" style = "left:15px;">
 
     </div>
-    <div id="box2" class = "box2class">
+    <div id="box2" class = "box">
 
     </div>
     <input type = "button" id = "btn1" value = "请点击我">
     <script>
         var target = document.getElementById("btn1");
         target.onclick = function(){
-            var leftValue = document.getElementByClassName("box1class").style.left;
+            var leftValue = document.getElementById("box1").style.left;
             leftValue = leftValue.replace("px","");
             leftValue = Number(leftValue) + 5;
             document.getElementById("box1").style.left = leftValue + "px";
