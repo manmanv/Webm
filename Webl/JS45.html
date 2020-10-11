@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //遍历数组最大值
+        var arr = [2,6,7,1,65,35,76];
+        var max = arr[0];
+        for(var i = 1; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        console.log('该数组的最大值是： ' + max);
+        
+        //遍历数组最小值
+        var arr2 = [2,54,1,55,87,88,423];
+        var min = arr2[0];
+        for(var i = 1; i < arr2.length; i++){
+            if(arr2[i] < min){
+                min = arr2[i];
+            }
+        }
+        console.log('该数组的最小值是： ' + min);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
