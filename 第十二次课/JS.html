@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>左侧tab导航栏</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .wrapper{
+            background-color: aquamarine;
+            width:600px;
+            height:400px;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-left:-300px;
+            margin-top:-200px;;
+        }
+        #leftTab{
+            background-color:blueviolet;
+            position: absolute;
+            top:5%;
+            width:30%;
+            height:90%;
+            margin: 0 auto;
+        }
+        #rightTab{
+            background-color: blue;
+            width:70%;
+            height:90%;
+            float:right;
+            position: relative;
+            top:5%;
+        }
+        .menu{
+            background-color: chocolate;
+            height: 60px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 60px;
+        }
+        .menu a{
+            text-decoration: none;
+            display:block;
+            width:100%;
+            height:100%;
+        }
+        .menu a:active{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class = "wrapper">
+        <div id = "leftTab">
+            <div id = "menu1" class = "menu"><a href = "#home" class = "menuName"></a>学校概况</div>
+            <div id = "menu2" class = "menu"><a href = "#news" class = "menuName"></a>新闻中心</div>
+            <div id = "menu3" class = "menu"><a href = "#department" class = "menuName"></a>机构设置</div>
+            <div id = "menu4" class = "menu"><a href = "#teachers" class = "menuName"></a>师资队伍</div>
+            <div id = "menu5" class = "menu"><a href = "#teaching" class = "menuName"></a>教育教学</div>
+        </div>
+        <div id = "rightTab">
+            <div id = "home"></div>
+            <div id = "news"></div>
+            <div id = "department"></div>
+            <div id = "teachers"></div>
+            <div id = "teaching"></div>
+        </div>
+
+    </div>
+</body>
+</html>
